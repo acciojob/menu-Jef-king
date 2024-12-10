@@ -98,22 +98,22 @@ function App(){
     <>
     <h1 style={{textAlign:"center"}}>Our Menu</h1>
     <div style={{textAlign:"center"}}>
-      <button onClick={()=>{
+      <button id={'main'} onClick={()=>{
         setFilterData(menuData);
       }}>All</button>
-      <button onClick={()=>{
+      <button id={'filter-btn-1'} onClick={()=>{
         const n=menuData.filter((item)=>{
           return item.category=='breakfast';
         })
         setFilterData(n);
       }}>Breakfast</button>
-      <button onClick={()=>{
+      <button id={'filter-btn-2'} onClick={()=>{
         const n=menuData.filter((item)=>{
           return item.category=='lunch';
         })
         setFilterData(n);
       }}>Lunch</button>
-      <button onClick={()=>{
+      <button id={'filter-btn-3'} onClick={()=>{
         const n=menuData.filter((item)=>{
           return item.category=='shakes';
         })
